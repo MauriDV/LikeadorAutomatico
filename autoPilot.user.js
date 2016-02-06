@@ -1,3 +1,9 @@
+// ==UserScript==
+// @name AutoLiker
+// @namespace Violentmonkey Scripts
+// @grant none
+// ==/UserScript==
+
 var box = '<div class="box" id="actions"><div class="title clearfix"><h2>Funciones</h2></div></div>';
 var button = '<button class="btn" id="{{ id }}">{{ text }}</button>';
 var aux = 0;

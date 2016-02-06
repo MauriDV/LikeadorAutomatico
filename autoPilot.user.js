@@ -1,0 +1,24 @@
+var box = '<div class="box" id="actions"><div class="title clearfix"><h2>Funciones</h2></div></div>';
+var button = '<button class="btn" id="{{ id }}">{{ text }}</button>';
+var aux = 0;
+
+$("#sidebar").prepend(box);
+$("#actions").append(Mustache.render(button, { id: "autoPilot", text: "Piloto automatico" }));
+
+function inicio(){
+	aux=1
+	$('.Feed-load.active').click()
+	$(".require-login.button-action-s.action-vote.hastipsy.pointer").click()
+	setTimeout(inicio, 10)
+}
+
+$("body").on("click", "#autoPilot", function(){
+	if(aux==0){
+		alert("aca aux == 0")
+		inicio()
+	}else{
+		alert("aca aux == 1")
+		location.reload()
+	}
+});
+

@@ -22,7 +22,7 @@ function inicio(){
 
 $("body").on("click", "#autoPilot", function(){
 	if(aux==0){
-		$("#autoPilot").css("Background","red")
+		$("#autoPilot").css("background","red")
 		inicio()
 	}else{
 		alert("la pagina se recargara, Salu2")

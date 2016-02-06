@@ -9,15 +9,16 @@ function inicio(){
 	aux=1
 	$('.Feed-load.active').click()
 	$(".require-login.button-action-s.action-vote.hastipsy.pointer").click()
+	$(window).scrollTop(0,0)
 	setTimeout(inicio, 10)
 }
 
 $("body").on("click", "#autoPilot", function(){
 	if(aux==0){
-		alert("aca aux == 0")
+		$("#autoPilot").css("Background","red")
 		inicio()
 	}else{
-		alert("aca aux == 1")
+		alert("la pagina se recargara, Salu2")
 		location.reload()
 	}
 });
